@@ -1,3 +1,27 @@
-Node-Js-project
+# Projet Node JS - APAYS
 
-Ceci est un repository git pour les rendus sur le projet en node Js
+## Introduction
+
+> http://restcountries.eu/
+* L'Api regroupe toutes sortes d'informations concernant les pays du monde entier.  
+Ces données peuvent être triées en fonction de :
+ - Du Nom 
+ - Code 
+ - Capitale
+ - Monnaie
+ - Langue
+ - Indicatif téléphonique
+ - Région 
+
+## Informations
+
+>Créé par Galmot Benoît et Germain Maxim, B2A
+
+## Utilisation
+
+> Commandes utiles au fonctionnement  du programme :
+ ( node main.js )
+ * -i, --info  : Affiche les informations
+ * -p, --pays : Affiche la liste des pays
+ * -c, --saisie_capitale : Entrer le nom d'une capitale pour voir ses informations
+ 
