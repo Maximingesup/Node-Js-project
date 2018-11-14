@@ -4,8 +4,9 @@ const axios = require('axios');
 const program = require('commander')
 
 // Affichage menu
-console.log("\n * * * Bienvenue sur APAYS * * * \n Entrer une commande  : node main.js (-option) \n")
+console.log("\n * * * Bienvenue sur APAYS * * * \n --- Galmot Benoît et Germain Maxim --- \n")
 program
+    .description('Entrer une commande  : node main.js (-option)')
     .option('-i, --info', "Plus d'info?")
     .option('-p, --pays', 'Liste de tous les pays, : Liste très longue')
     .option('-s, --saisie_pays', "Saisissez le nom d'un pays pour des informations")
