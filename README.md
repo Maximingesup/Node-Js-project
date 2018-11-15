@@ -26,4 +26,5 @@ Ces données peuvent être triées en fonction de :
  * -s, --saisie_pays : Entrer le nom d'un pays pour voir ses informations
  * -c, --saisie_capitale : Entrer le nom d'une capitale pour voir ses informations
  * -r, --saisie_region : Entrer le nom d'un continent pour voir ses informations
+ * -H, --history : Filesystem history, sauvegarde une saisie dans un fichier"
  
