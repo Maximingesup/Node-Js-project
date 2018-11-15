@@ -3,7 +3,7 @@
 ## Introduction
 
 > http://restcountries.eu/
-L'Api regroupe toutes sortes d'informations concernant les pays du monde entier.  
+- L'Api regroupe toutes sortes d'informations concernant les pays du monde entier.  
 Ces données peuvent être triées en fonction de :
  - Du Nom 
  - Code 
