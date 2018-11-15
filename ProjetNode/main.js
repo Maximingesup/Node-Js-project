@@ -12,7 +12,8 @@ program
     .option('-s, --saisie_pays', "Saisissez le nom d'un pays pour des informations")
     .option('-r, --saisie_region', "Saisissez le nom d'un continent pour des informations")
     .option('-c, --saisie_capitale', "Saisissez le nom d'une capitale pour des informations")
-
+    .option('-H --history', "Filesystem history (test fonctionnelle)")
+    
 program.parse(process.argv)
 if (program.info) {
     console.log("Bienvenue sur l'Api des Pays, créer par Galmot Benoît et Germain Maxim. Pour entrer une commande  : node main.js (-option)")
@@ -66,6 +67,22 @@ else if (program.saisie_region) {
             console.log(answers.data)
         })
         .catch(err => console.log("Erreur, votre saisie n'est pas une région"))
+}
+// filesystem history
+ else if (program.history) {
+    const inquirer = require('inquirer')
+    inquirer.prompt([{
+            type: 'input',
+            message: 'Enregistrez un nom',
+            name: 'save'
+        }, ]).then((answers) => {
+            const fs = require('fs');
+            fs.appendFile('message.txt', "\n" +answers.save, function (err) {
+                if (err) throw err;
+                console.log('Sauvegarde réussie !');
+            });
+        })
+        .catch(err => console.log("Impossible de sauvegarder"))
 } else {
     program.help()
 }
