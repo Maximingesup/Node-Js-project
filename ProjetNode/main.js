@@ -28,7 +28,7 @@ else if (program.saisie_capitale) {
     const inquirer = require('inquirer')
     inquirer.prompt([{
             type: 'input',
-            message: 'Choisisissez une capitale',
+            message: 'Choisisissez une capitale :',
             name: 'capital'
         }, ]).then((answers) => {
             return axios.get("https://restcountries.eu/rest/v2/capital/" + answers.capital)
@@ -43,7 +43,7 @@ else if (program.saisie_pays) {
     const inquirer = require('inquirer')
     inquirer.prompt([{
             type: 'input',
-            message: 'Choisisissez un pays',
+            message: 'Choisisissez un pays :',
             name: 'pays'
         }, ]).then((answers) => {
             return axios.get("https://restcountries.eu/rest/v2/capital/" + answers.pays)
@@ -73,7 +73,7 @@ else if (program.saisie_region) {
     const inquirer = require('inquirer')
     inquirer.prompt([{
             type: 'input',
-            message: 'Enregistrez un nom',
+            message: 'Enregistrez un nom :',
             name: 'save'
         }, ]).then((answers) => {
             const fs = require('fs');
