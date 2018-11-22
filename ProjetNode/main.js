@@ -46,7 +46,7 @@ else if (program.saisie_pays) {
             message: 'Choisisissez un pays :',
             name: 'pays'
         }, ]).then((answers) => {
-            return axios.get("https://restcountries.eu/rest/v2/capital/" + answers.pays)
+            return axios.get("https://restcountries.eu/rest/v2/name/" + answers.pays)
         })
         .then((answers) => {
             console.log(answers.data)
